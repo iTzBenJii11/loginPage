@@ -1,0 +1,63 @@
+/* styles which apply to ALL elements*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* styles the loginPage div, this displays the contents in the correct location*/
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* styles the contents within the form */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Space between form elements */
+  box-shadow: 3px 5px 5px 2px rgb(0, 0, 0); /* the element in style in the following order, width, length, spread and color*/
+  text-align: center;
+  width: 400px;
+  height: 350px;
+  border: 1px solid rgb(107, 107, 107);
+  backdrop-filter: blur(5px); /* Blurs the background */
+  padding: 3rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* styles for the login title */
+.loginTitle {
+  font-size: 3rem;
+}
+
+/* style for input field "password" */
+.loginForm input[type="password"] {
+  border-radius: 10px;
+  border: 0px solid black;
+  height: 20rem;
+}
+
+/* style for input field "text" */
+.loginForm input[type="text"] {
+  border-radius: 10px;
+  border: 0px solid black;
+  height: 20rem;
+}
+
+/* style for input field "submit" */
+.loginForm input[type="submit"] {
+  border-radius: 10px;
+  border: 0px solid black;
+  height: 30rem;
+  font-size: 1.1rem;
+}
+
+/* Style for the placeholders */
+.loginForm input::placeholder {
+  color: #acacac; /* Placeholder text color */
+  font-style: italic; /* Italicized text */
+}
