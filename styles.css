@@ -14,7 +14,7 @@
 }
 
 /* styles the contents within the form */
-.loginForm {
+#loginForm {
   display: flex;
   flex-direction: column;
   gap: 25px; /* Space between form elements */
@@ -35,29 +35,29 @@
 }
 
 /* style for input field "password" */
-.loginForm input[type="password"] {
+#loginForm input[type="password"] {
   border-radius: 10px;
   border: 0px solid black;
   height: 20rem;
 }
 
 /* style for input field "text" */
-.loginForm input[type="text"] {
+#loginForm input[type="email"] {
   border-radius: 10px;
   border: 0px solid black;
   height: 20rem;
 }
 
 /* style for input field "submit" */
-.loginForm input[type="submit"] {
+.button{
   border-radius: 10px;
   border: 0px solid black;
-  height: 30rem;
+  height:25rem;
   font-size: 1.1rem;
 }
 
 /* Style for the placeholders */
-.loginForm input::placeholder {
+#loginForm input::placeholder {
   color: #acacac; /* Placeholder text color */
   font-style: italic; /* Italicized text */
 }

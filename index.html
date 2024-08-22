@@ -11,27 +11,21 @@
     </style>
   </head>
   <body>
-    <!-- COMMENT -->
     <style>
       body {
         background-image: url("static/moon-lights-4k-art.jpg");
       }
     </style>
-
-    <!-- <div class="image">
-    <img id="imageBackground" src="static/moon-lights-4k-art.jpg" alt="background image">
-</div> -->
-
     <div class="loginPage">
-      <form class="loginForm" action="/index.html">
+      <form id="loginForm">
         <h1 class="loginTitle">LOGIN PAGE</h1>
-        <label for="username">Username:</label>
+        <label for="email">Email Address:</label>
         <input
-          type="text"
-          name="username"
-          id="username"
+          type="email"
+          name="email"
+          id="email"
           value=""
-          placeholder="Enter Your Username"
+          placeholder="Enter Your Email"
         />
         <label for="password">Password:</label>
         <input
@@ -41,10 +35,9 @@
           value=""
           placeholder="Enter Your Password"
         />
-        <input type="submit" value="submit" />
+        <button class="button" type="submit" value="submit">Login</button>
+        <p id="error-message" style="color: red;"></p>
       </form>
     </div>
-
-    <script src="app.js"></script>
   </body>
 </html>
