@@ -47,5 +47,12 @@ app.post("/users/login", async (req, res) => {
   }
 });
 
+value1 = Math.floor(Math.random() * 256);
+value2 = Math.floor(Math.random() * 256);
+value3 = Math.floor(Math.random() * 256);
+
+const randomColor = `rgb(${value1}, ${value2}, ${value3})`;
+console.log(randomColor);
+
 // App will open on port 3000
 app.listen(3000);
